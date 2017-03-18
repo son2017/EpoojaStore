@@ -21,14 +21,45 @@
 
     </android.support.design.widget.AppBarLayout>
 
+<android.support.v4.view.ViewPager
+    android:layout_marginTop="55dp"
+    android:layout_marginBottom="300sp"
+    android:id="@+id/image_pagerview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+</android.support.v4.view.ViewPager>
+    <LinearLayout
+        android:layout_below="@+id/image_pagerview"
+        android:id="@+id/image_count"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="204dp"
+        android:layout_marginBottom="400dp"/>
+
+    <!--<android.support.v4.view.ViewPager
+        android:id="@+id/image_pagerview"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_height="181dp"
+        android:layout_marginBottom="278dp"
+        android:layout_alignParentBottom="true">
+    </android.support.v4.view.ViewPager>
+-->
+
+
+
+
     <include layout="@layout/content_main" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+
 
 </android.support.design.widget.CoordinatorLayout>
