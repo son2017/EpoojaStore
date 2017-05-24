@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Activity.MainActivity">
+
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <com.anghatechsolution.eww.epoojastore.Adapter.SliderLayout
+            android:id="@+id/slider"
+            android:layout_width="match_parent"
+            custom:pager_animation="Accordion"
+            custom:auto_cycle="true"
+            custom:indicator_visibility="visible"
+            custom:pager_animation_span="1100"
+            android:layout_height="200dp"/>
+
+        <com.anghatechsolution.eww.epoojastore.Indicators.PagerIndicator
+            android:id="@+id/custom_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            custom:selected_color="#0095BF"
+            custom:unselected_color="#55333333"
+            custom:selected_drawable="@drawable/bird"
+            custom:shape="oval"
+            custom:selected_padding_left="5dp"
+            custom:selected_padding_right="5dp"
+            custom:unselected_padding_left="5dp"
+            custom:unselected_padding_right="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            custom:selected_width="6dp"
+            custom:selected_height="6dp"
+            custom:unselected_width="6dp"
+            custom:unselected_height="6dp"
+            android:layout_marginBottom="20dp"
+            />
+        <com.anghatechsolution.eww.epoojastore.Indicators.PagerIndicator
+            android:id="@+id/custom_indicator2"
+            style="@style/AndroidImageSlider_Corner_Oval_Orange"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_browes"
+            android:text="@string/catagory"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_below="@+id/slider"/>
+
+        <android.support.v7.widget.CardView
+            android:layout_below="@+id/text_browes"
+            android:padding="25dp"
+            android:background="@color/bacground_color"
+            android:layout_marginTop="20dp"
+            android:elevation="10dp"
+            android:id="@+id/card_circiluer"
+            android:layout_width="match_parent"
+            android:layout_height="75dp">
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:id="@+id/relative_round"
+                android:layout_below="@+id/slider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/pooja_samgri_kit"
+                    android:src="@drawable/b_avator"
+                    custom:civ_border_width="5dp"
+                    custom:civ_border_color="@color/light"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <View
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/pooja_samgri_kit"
+                    android:layout_toEndOf="@+id/pooja_samgri_kit"
+                    android:layout_width="2dp"
+                    android:layout_height="40dp"
+                    android:background="@android:color/darker_gray"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/pooja_product"
+                    android:src="@drawable/b_avator"
+                    custom:civ_border_width="5dp"
+                    custom:civ_border_color="@color/light"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/pooja_samgri_kit"
+                    android:layout_toEndOf="@+id/pooja_samgri_kit" />
+                <View
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/pooja_product"
+                    android:layout_toEndOf="@+id/pooja_product"
+                    android:layout_width="2dp"
+                    android:layout_height="40dp"
+                    android:background="@android:color/darker_gray"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/pooja_books"
+                    custom:civ_border_color="@color/light"
+                    custom:civ_border_width="5dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/pooja_product"
+                    android:layout_toEndOf="@+id/pooja_product"
+                    android:src="@drawable/b_avator"/>
+                <View
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/pooja_books"
+                    android:layout_toEndOf="@+id/pooja_books"
+                    android:layout_width="2dp"
+                    android:foregroundGravity="center"
+                    android:layout_height="40dp"
+                    android:background="@android:color/darker_gray"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/pooja_special"
+                    android:layout_alignParentTop="true"
+                    custom:civ_border_color="@color/light"
+                    custom:civ_border_width="5dp"
+                    android:layout_toRightOf="@+id/pooja_books"
+                    android:layout_toEndOf="@+id/pooja_books"
+                    android:src="@drawable/b_avator"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pooja_special"
+                    android:id="@+id/pooja_samgri_special_text"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@+id/pooja_books"
+                    android:layout_toEndOf="@+id/pooja_books"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pooja_book"
+                    android:id="@+id/pooja_samgri_book_text"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@+id/pooja_product"
+                    android:layout_toEndOf="@+id/pooja_product"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginStart="13dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pooja_product"
+                    android:id="@+id/pooja_samgri_product_text"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/pooja_books"
+                    android:layout_toStartOf="@+id/pooja_books"
+                    android:layout_marginRight="21dp"
+                    android:layout_marginEnd="21dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pooja_samagri_kit"
+                    android:id="@+id/pooja_samgri_kit_text"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/pooja_product"
+                    android:layout_toStartOf="@+id/pooja_product" />
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
+      <LinearLayout
+
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+
+          <android.support.v7.widget.RecyclerView
+              android:id="@+id/recyclerView"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="8dp"
+              android:clipToPadding="false"
+              android:padding="4dp" />
+      </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>
+
+
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:id="@+id/fragmentScroll"
+        android:layout_height="match_parent"
+        xmlns:custom="http://schemas.android.com/apk/res-auto">
+
+        <LinearLayout
+            android:id="@+id/fragmentLinearLayout"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_height="match_parent">
+
+
+
+            <com.anghatechsolution.eww.epoojastore.Adapter.SliderLayout
+                android:id="@+id/slider"
+                android:layout_width="match_parent"
+                custom:pager_animation="Accordion"
+                custom:auto_cycle="true"
+                custom:indicator_visibility="visible"
+                custom:pager_animation_span="1100"
+                android:layout_height="200dp"/>
+
+
+            <com.anghatechsolution.eww.epoojastore.Indicators.PagerIndicator
+                android:id="@+id/custom_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                custom:selected_color="#0095BF"
+                custom:unselected_color="#55333333"
+                custom:selected_drawable="@drawable/bird"
+                custom:shape="oval"
+                custom:selected_padding_left="5dp"
+                custom:selected_padding_right="5dp"
+                custom:unselected_padding_left="5dp"
+                custom:unselected_padding_right="5dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                custom:selected_width="6dp"
+                custom:selected_height="6dp"
+                custom:unselected_width="6dp"
+                custom:unselected_height="6dp"
+                android:layout_marginBottom="20dp"
+                />
+            <com.anghatechsolution.eww.epoojastore.Indicators.PagerIndicator
+                android:id="@+id/custom_indicator2"
+                style="@style/AndroidImageSlider_Corner_Oval_Orange"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_browes"
+                android:text="@string/catagory"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_below="@+id/slider"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_below="@+id/text_browes"
+                android:padding="25dp"
+                android:background="@color/bacground_color"
+                android:layout_marginTop="20dp"
+                android:elevation="10dp"
+                android:id="@+id/card_circiluer"
+                android:layout_width="match_parent"
+                android:layout_height="75dp">
+                <RelativeLayout
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/relative_round"
+                    android:layout_below="@+id/slider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/pooja_samgri_kit"
+                        android:src="@drawable/b_avator"
+                        custom:civ_border_width="5dp"
+                        custom:civ_border_color="@color/light"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+                    <View
+                        android:layout_marginTop="2dp"
+                        android:layout_toRightOf="@+id/pooja_samgri_kit"
+                        android:layout_toEndOf="@+id/pooja_samgri_kit"
+                        android:layout_width="2dp"
+                        android:layout_height="40dp"
+                        android:background="@android:color/darker_gray"/>
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/pooja_product"
+                        android:src="@drawable/b_avator"
+                        custom:civ_border_width="5dp"
+                        custom:civ_border_color="@color/light"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/pooja_samgri_kit"
+                        android:layout_toEndOf="@+id/pooja_samgri_kit" />
+                    <View
+                        android:layout_marginTop="2dp"
+                        android:layout_toRightOf="@+id/pooja_product"
+                        android:layout_toEndOf="@+id/pooja_product"
+                        android:layout_width="2dp"
+                        android:layout_height="40dp"
+                        android:background="@android:color/darker_gray"/>
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/pooja_books"
+                        custom:civ_border_color="@color/light"
+                        custom:civ_border_width="5dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/pooja_product"
+                        android:layout_toEndOf="@+id/pooja_product"
+                        android:src="@drawable/b_avator"/>
+                    <View
+                        android:layout_marginTop="2dp"
+                        android:layout_toRightOf="@+id/pooja_books"
+                        android:layout_toEndOf="@+id/pooja_books"
+                        android:layout_width="2dp"
+                        android:foregroundGravity="center"
+                        android:layout_height="40dp"
+                        android:background="@android:color/darker_gray"/>
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/pooja_special"
+                        android:layout_alignParentTop="true"
+                        custom:civ_border_color="@color/light"
+                        custom:civ_border_width="5dp"
+                        android:layout_toRightOf="@+id/pooja_books"
+                        android:layout_toEndOf="@+id/pooja_books"
+                        android:src="@drawable/b_avator"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pooja_special"
+                        android:id="@+id/pooja_samgri_special_text"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toRightOf="@+id/pooja_books"
+                        android:layout_toEndOf="@+id/pooja_books"
+                        android:layout_marginStart="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pooja_book"
+                        android:id="@+id/pooja_samgri_book_text"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toRightOf="@+id/pooja_product"
+                        android:layout_toEndOf="@+id/pooja_product"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginStart="13dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pooja_product"
+                        android:id="@+id/pooja_samgri_product_text"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toLeftOf="@+id/pooja_books"
+                        android:layout_toStartOf="@+id/pooja_books"
+                        android:layout_marginRight="21dp"
+                        android:layout_marginEnd="21dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pooja_samagri_kit"
+                        android:id="@+id/pooja_samgri_kit_text"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toLeftOf="@+id/pooja_product"
+                        android:layout_toStartOf="@+id/pooja_product" />
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:overScrollMode="never"
+                android:layout_width="372dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.74" />
+
+
+        </LinearLayout>
+
+    </ScrollView>-->
