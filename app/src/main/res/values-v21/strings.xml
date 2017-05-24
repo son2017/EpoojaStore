@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="country_name">CountryName</string>
+    <string name="item_desc">Log in/Sign up</string>
+    <string name="more">More</string>
+</resources>

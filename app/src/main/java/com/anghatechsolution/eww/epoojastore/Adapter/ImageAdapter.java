@@ -1,4 +1,5 @@
-package com.anghatechsolution.eww.epoojastore;
+/*
+package com.anghatechsolution.eww.epoojastore.Adapter;
 
 import android.content.Context;
 import android.support.v4.view.PagerAdapter;
@@ -9,19 +10,27 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import com.anghatechsolution.eww.epoojastore.R;
+
+
+*/
 /**
- * Created by eww on 3/18/2017.
- */
+ * Created by eww on 4/5/2017.
+ *//*
+
 
 public class ImageAdapter extends PagerAdapter {
-    /**
+    */
+/**
      * Variables
-     */
+     *//*
+
     private Context mContext;
     private LayoutInflater mLayoutInflater;
     private int[] mResources;
 
-    /**
+    */
+/**
      * *************************************************************************
      * ***
      * <p/>
@@ -29,7 +38,8 @@ public class ImageAdapter extends PagerAdapter {
      * <p/>
      * *************************************************************************
      * ***
-     */
+     *//*
+
     public ImageAdapter(Context context) {
         mContext = context;
 
@@ -45,9 +55,11 @@ public class ImageAdapter extends PagerAdapter {
         return view == ((LinearLayout) object);
     }
 
-    /**
+    */
+/**
      * Method to initialize the View
-     */
+     *//*
+
     @Override
     public Object instantiateItem(ViewGroup container, final int position) {
         mLayoutInflater = (LayoutInflater) mContext
@@ -65,9 +77,11 @@ public class ImageAdapter extends PagerAdapter {
         return itemView;
     }
 
-    /**
+    */
+/**
      * Method to destroy the Child View
-     */
+     *//*
+
     @Override
     public void destroyItem(ViewGroup container, int position, Object object) {
         container.removeView((LinearLayout) object);
@@ -78,3 +92,4 @@ public class ImageAdapter extends PagerAdapter {
     }
 
 }
+*/

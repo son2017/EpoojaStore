@@ -1,10 +1,53 @@
 <resources>
     <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="base_margin">16dp</dimen>
+    <dimen name="base_margin_half">8dp</dimen>
+    <dimen name="base_margin_horizontal">16dp</dimen>
+    <dimen name="base_margin_vertical">16dp</dimen>
+    <dimen name="base_margin_horizontal_half">8dp</dimen>
+    <dimen name="base_margin_vertical_half">8dp</dimen>
+    <dimen name="marging_from_top">10dp</dimen>
+    <!-- Size for navigation drawer. Max 320dp-->
+    <dimen name="navigation_drawer_size">290dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="nav_header_vertical_spacing">16dp</dimen>
     <dimen name="nav_header_height">160dp</dimen>
     <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="base_recycler_margin">8dp</dimen>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <dimen name="textSize">15sp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="dots_height">30dp</dimen>
+    <dimen name="dots_margin_bottom">20dp</dimen>
+    <dimen name="img_width_height">120dp</dimen>
+    <dimen name="slide_title">30dp</dimen>
+    <dimen name="slide_desc">16dp</dimen>
+    <dimen name="desc_padding">40dp</dimen>
+    <dimen name="view_width_small">1dp</dimen>
+    <dimen name="view_width_xsmall">0.5dp</dimen>
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_medium">8dp</dimen>
+
+    <dimen name="text_size_xsmall">8dp</dimen>
+    <dimen name="text_size_small">10dp</dimen>
+    <dimen name="text_size_medium">12dp</dimen>
+    <dimen name="text_size_xmedium">14dp</dimen>
+    <dimen name="text_size_large">16dp</dimen>
+    <dimen name="card_height">304dp</dimen>
+    <dimen name="md_keylines">16dp</dimen>
+    <dimen name="tile_padding">8dp</dimen>
+    <dimen name="tile_height">160dp</dimen>
+    <dimen name="app_bar_height">256dp</dimen>
+    <dimen name="article_keylines">72dp</dimen>
+    <dimen name="avator_size">40dp</dimen>
+    <dimen name="card_title_height">40dp</dimen>
+    <dimen name="article_titles">20sp</dimen>
+    <dimen name="cards_button_width">48dp</dimen>
+    <dimen name="cards_button_height">48dp</dimen>
+    <dimen name="article_subheading">16sp</dimen>
+    <dimen name="card_image_height">200dp</dimen>
+    <dimen name="list_body">14sp</dimen>
+    <dimen name="navheader_height">222dp</dimen>
 </resources>
