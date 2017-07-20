@@ -59,9 +59,6 @@ import timber.log.Timber;
 public class Mainfragment extends Fragment implements BaseSliderView.OnSliderClickListener, ViewPagerEx.OnPageChangeListener {
     private RecyclerView mRecyclerView;
     private SliderLayout mDemoSlider;
-    ScrollView scrollView;
-    LinearLayout linearLayout;
-    private  Toolbar toolbar;
     private boolean mHorizontal;
 
 
@@ -271,7 +268,7 @@ public class Mainfragment extends Fragment implements BaseSliderView.OnSliderCli
 
     @Override
     public void onPageSelected(int position) {
-        Log.d("Slider Demo", "Page Changed: " + position);
+            Log.d("Slider Demo", "Page Changed: " + position);
     }
 
     @Override
